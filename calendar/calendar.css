@@ -1,0 +1,103 @@
+/* [CONTAINER] */
+#cal-wrap { width: 90%;
+padding-left: 120px;
+}
+
+/* [PERIOD SELECTOR] */
+#cal-date { display: flex; }
+#cal-mth, #cal-yr, #cal-set {
+  box-sizing: border-box;
+  padding: 10px 20px;
+  padding-left: 120px;
+  font-size: 1.2em;
+  border: 2px;
+  border-color: #0081a7;
+  color: #fff;
+}
+#cal-mth, #cal-yr { background: #64dfdf; }/*besides set*/
+#cal-set { background: #64dfdf; }/* set*/
+
+/* [CALENDAR] */
+#calendar {
+  width: 111%;
+  border-collapse: collapse;
+  margin-top: 17px;
+  margin-left: 3px;
+}
+#calendar tr.head td {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background: #219ebc;
+  padding: 15px;
+  text-align: center;
+  border: 2px,2px,2px;
+  border-color: #0081a7;
+}
+#calendar tr.day td {
+  border: 1px solid #ddd;
+  width: 14.28%;
+  padding: 15px 5px;
+  vertical-align: top;
+}
+#calendar tr.day td:hover {
+  background: #caf0f8;
+  cursor: pointer;
+}
+#calendar tr td.blank {
+  background: #fff;
+}
+#calendar .dd {
+  font-size: 1.2em;
+  color: #999;
+}
+#calendar .evt {
+  margin-top: 5px;
+  font-size: 0.8em;
+  font-weight: bold;
+  overflow: hidden;
+  color: #ff5d5d;
+}
+
+/* [ADD/EDIT EVENT] */
+#cal-event form {
+  padding: 15px;
+  margin-top: 20px;
+  background: #64dfdf;
+  border: 1px solid #ddd;
+  width: 111%;
+  margin-left: 3px;
+}
+#cal-event h1 {
+  color: rgb(3, 64, 121);
+  padding: 0;
+  margin: 0;
+}
+#evt-date {
+  color: rgb(84, 156, 179);
+  margin: 10px 0;
+}
+#cal-event textarea {
+  display: block;
+  box-sizing: padding-box;
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  resize: none;
+}
+#cal-event input[type=button], #cal-event input[type=submit] {
+  padding: 10px;
+  margin: 5px;
+  font-size: 1.2em;
+  border: 1px;
+  border-color:#0081a7; 
+  background: #64dfdf;
+  border: 2px,2px,2px;
+  color: #fff;
+}
+
+/* just */
+html, body, textarea, input {
+  font-family: arial, sans-serif;
+}
